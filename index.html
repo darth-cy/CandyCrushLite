@@ -28,6 +28,8 @@
         var newEventHandler = new CandyCrush.EventHandler(newCandyCrush);
 
         $(".candy-box").on("click", newEventHandler.handleClick.bind(newEventHandler));
+        $(".candy-box").on("mousedown", newEventHandler.handleMouseDown.bind(newEventHandler));
+        $(".candy-box").on("mouseup", newEventHandler.handleMouseUp.bind(newEventHandler));
       })
     </script>
 
