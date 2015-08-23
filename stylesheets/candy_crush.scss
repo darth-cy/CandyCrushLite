@@ -34,7 +34,7 @@
   top: 100px;
   left: 100px;
   border: 1px solid black;
-  background-color: #B2B2B2;
+  background-color: AliceBlue;
 
   height: 800px;
   width: 500px;
@@ -50,6 +50,73 @@
 
   z-index: 300;
 }
+
+/* ALL CANDY CLASSES */
+
+/* Normal Candies */
+.candy-red{
+  background-image: url(../assets/candies/Red.png);
+  background-size: 100px 100px;
+}
+
+.candy-green{
+  background-image: url(../assets/candies/Green.png);
+  background-size: 100px 100px;
+}
+
+.candy-blue{
+  background-image: url(../assets/candies/Blue.png);
+  background-size: 100px 100px;
+}
+
+.candy-orange{
+  background-image: url(../assets/candies/Orange.png);
+  background-size: 100px 100px;
+}
+
+.candy-yellow{
+  background-image: url(../assets/candies/Yellow.png);
+  background-size: 100px 100px;
+}
+
+.candy-purple{
+  background-image: url(../assets/candies/Purple.png);
+  background-size: 100px 100px;
+}
+
+/* Wrapped Candies */
+.candy-red-wrapped{
+  background-image: url(../assets/candies/RedWrapped.png);
+  background-size: 100px 100px;
+}
+
+.candy-green-wrapped{
+  background-image: url(../assets/candies/GreenWrapped.png);
+  background-size: 100px 100px;
+}
+
+.candy-blue-wrapped{
+  background-image: url(../assets/candies/BlueWrapped.png);
+  background-size: 100px 100px;
+}
+
+.candy-orange-wrapped{
+  background-image: url(../assets/candies/OrangeWrapped.png);
+  background-size: 100px 100px;
+}
+
+.candy-yellow-wrapped{
+  background-image: url(../assets/candies/YellowWrapped.png);
+  background-size: 100px 100px;
+}
+
+.candy-purple-wrapped{
+  background-image: url(../assets/candies/PurpleWrapped.png);
+  background-size: 100px 100px;
+}
+
+
+
 
 /* ALL POSITION CLASSES */
 
