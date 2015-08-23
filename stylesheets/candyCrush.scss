@@ -12,8 +12,6 @@
 #game-domain{
   position: relative;
   margin: 0px;
-  top: 0px;
-  left: 0px;
   height: 1000px;
   width: 700px;
   border: 2px solid red;
@@ -24,13 +22,36 @@
 #show-off-domain{
   position: relative;
   margin: 0px;
-  top: 0px;
-  left: 0px;
   height: 1000px;
   width: 700px;
   border: 2px solid green;
   z-index: 100;
   display: inline-block;
+}
+
+#current-score-board{
+  text-align: center;
+  font-size: 24px;
+  height: 200px;
+  position: absolute;
+  background-color: black;
+  color: white;
+
+  top: 0px;
+  left: 0px;
+  width: 700px;
+
+  margin: 0 auto;
+}
+
+#high-score-board{
+  height: 800px;
+  position: absolute;
+  background-color: AliceBlue;
+  bottom: 0px;
+  left: 0px;
+  width: 700px;
+  z-index: 9999999;
 }
 
 #service-area{
