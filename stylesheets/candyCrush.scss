@@ -53,6 +53,16 @@
   z-index: 300;
 }
 
+.burst-effect-box{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 299;
+
+  background-image: url(../assets/candies/BurstStar.png);
+  background-size: 100px 100px;
+}
+
 /* ALL CANDY CLASSES */
 
 /* Normal Candies */
