@@ -1,3 +1,14 @@
+#candy-crush-master{
+  position: absolute;
+  margin: 0px;
+  top: 0px;
+  left: 0px;
+  height: 1200px;
+  width: 1500px;
+  border: 2px solid black;
+  z-index: 0;
+}
+
 #game-domain{
   position: relative;
   margin: 0px;
@@ -6,7 +17,20 @@
   height: 1000px;
   width: 700px;
   border: 2px solid red;
-  z-index: 100px;
+  z-index: 100;
+  display: inline-block;
+}
+
+#show-off-domain{
+  position: relative;
+  margin: 0px;
+  top: 0px;
+  left: 0px;
+  height: 1000px;
+  width: 700px;
+  border: 2px solid green;
+  z-index: 100;
+  display: inline-block;
 }
 
 #service-area{
