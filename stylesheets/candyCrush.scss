@@ -34,7 +34,8 @@
   font-size: 24px;
   height: 200px;
   position: absolute;
-  background-color: black;
+  background-color: #FF00CC;
+  transform: background-color 0.5s;
   color: white;
 
   top: 0px;
@@ -42,6 +43,10 @@
   width: 700px;
 
   margin: 0 auto;
+}
+
+#current-score-board-react{
+  background-color: #FF0033;
 }
 
 #high-score-board{
