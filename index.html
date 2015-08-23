@@ -2,6 +2,7 @@
   <head>
     <title>CandyCrushLite</title>
     <link rel="stylesheet" media="all" href="stylesheets/candyCrush.scss"/>
+    <script type="application/javascript" src="lib/candyCrush.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   </head>
 
@@ -12,21 +13,6 @@
 
 
       <div id="game-box">
-        <div class="container">
-
-          <div class="candy-box row-1-col-0 candy-red" row-index="1" col-index="0"></div>
-          <div class="candy-box row-1-col-1 candy-green" row-index="1" col-index="1"></div>
-          <div class="candy-box row-1-col-2 candy-yellow" row-index="1" col-index="2"></div>
-          <div class="candy-box row-1-col-3 candy-purple" row-index="1" col-index="3"></div>
-          <div class="candy-box row-1-col-4 candy-blue" row-index="1" col-index="4"></div>
-
-          <div class="candy-box row-2-col-0 candy-red-wrapped" row-index="2" col-index="0"></div>
-          <div class="candy-box row-2-col-1 candy-green-wrapped" row-index="2" col-index="1"></div>
-          <div class="candy-box row-2-col-2 candy-yellow-wrapped" row-index="2" col-index="2"></div>
-          <div class="candy-box row-2-col-3 candy-purple-wrapped" row-index="2" col-index="3"></div>
-          <div class="candy-box row-2-col-4 candy-blue-wrapped" row-index="2" col-index="4"></div>
-
-        </div>
       </div>
 
 
@@ -35,17 +21,20 @@
 
     <script type="application/javascript">
       $(function(){
-        $(".candy-box").on("click", function(event){
-          $candyBox = $(event.currentTarget);
+        // $(".candy-box").on("click", function(event){
+        //   $candyBox = $(event.currentTarget);
+        //
+        //   $candyBox.removeClass("row-" + ($candyBox.attr("row-index")) + "-col-" + $candyBox.attr("col-index"));
+        //   $candyBox.addClass("row-" + (Number($candyBox.attr("row-index")) + 1) + "-col-" + ($candyBox.attr("col-index")));
+        //
+        //   $candyBox.attr("row-index", Number($candyBox.attr("row-index")) + 1);
+        //   if($candyBox.attr("row-index") > 8){
+        //     $candyBox.remove();
+        //   }
+        // })
 
-          $candyBox.removeClass("row-" + ($candyBox.attr("row-index")) + "-col-" + $candyBox.attr("col-index"));
-          $candyBox.addClass("row-" + (Number($candyBox.attr("row-index")) + 1) + "-col-" + ($candyBox.attr("col-index")));
-
-          $candyBox.attr("row-index", Number($candyBox.attr("row-index")) + 1);
-          if($candyBox.attr("row-index") > 8){
-            $candyBox.remove();
-          }
-        })
+        var candyField = $("#game-box");
+        var newCandyCrush = new CandyCrush.Game(candyField);
       })
     </script>
 
