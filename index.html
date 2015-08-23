@@ -8,19 +8,30 @@
   <body>
 
     <div id="game-domain">
+
+      <div id="service-area"><h1>Candy Crush Lite</h1></div>
+
       <div id="game-box">
+        <div class="container">
 
-        <div id="test-box"></div>
+          <div class="candy-box row-0-col-0" row-index="0" col-index="0"></div>
 
+        </div>
       </div>
     </div>
 
     <script type="application/javascript">
       $(function(){
-        $("#test-box").on("click", function(){
-          $testBox = $("#test-box");
-          $testBox.css("transition", "all 2s ease 0s");
-          $testBox.css("top", "500px").css("left", "500px");
+        $(".candy-box").on("click", function(event){
+          $candyBox = $(event.currentTarget);
+
+          $candyBox.removeClass("row-" + ($candyBox.attr("row-index")) + "-col-" + $candyBox.attr("col-index"));
+          $candyBox.addClass("row-" + (Number($candyBox.attr("row-index")) + 1) + "-col-" + ($candyBox.attr("col-index")));
+
+          $candyBox.attr("row-index", Number($candyBox.attr("row-index")) + 1);
+          if($candyBox.attr("row-index") > 7){
+            $candyBox.remove();
+          }
         })
       })
     </script>
