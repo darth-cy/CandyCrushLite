@@ -21,20 +21,12 @@
 
     <script type="application/javascript">
       $(function(){
-        // $(".candy-box").on("click", function(event){
-        //   $candyBox = $(event.currentTarget);
-        //
-        //   $candyBox.removeClass("row-" + ($candyBox.attr("row-index")) + "-col-" + $candyBox.attr("col-index"));
-        //   $candyBox.addClass("row-" + (Number($candyBox.attr("row-index")) + 1) + "-col-" + ($candyBox.attr("col-index")));
-        //
-        //   $candyBox.attr("row-index", Number($candyBox.attr("row-index")) + 1);
-        //   if($candyBox.attr("row-index") > 8){
-        //     $candyBox.remove();
-        //   }
-        // })
-
         var candyField = $("#game-box");
         var newCandyCrush = new CandyCrush.Game(candyField);
+
+        var newEventHandler = new CandyCrush.EventHandler(newCandyCrush);
+
+        $(".candy-box").on("click", newEventHandler.processClick.bind(newEventHandler));
       })
     </script>
 
