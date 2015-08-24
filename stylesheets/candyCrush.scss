@@ -113,6 +113,16 @@
   background-size: 100px 100px;
 }
 
+.bomb-burst-effect-box{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 299;
+
+  background-image: url(../assets/candies/burst.png);
+  background-size: 100px 100px;
+}
+
 /* ALL CANDY CLASSES */
 
 /* Normal Candies */
@@ -174,6 +184,11 @@
 
 .candy-purple-wrapped{
   background-image: url(../assets/candies/PurpleWrapped.png);
+  background-size: 100px 100px;
+}
+
+.candy-bomb{
+  background-image: url(../assets/candies/bomb.png);
   background-size: 100px 100px;
 }
 
