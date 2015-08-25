@@ -1,8 +1,10 @@
 ### CandyCrushLite ###
 
 # To Play #
-+ Click this link: [CandyCrushLite][candy-link]
-[candy-link]:http://htmlpreview.github.com/?https://github.com/Razynoir/CandyCrushLite/blob/master/index.html
++ Download or clone the repo and run the index.html
++ If you want an online version with leaderboards, checkout [CandyCrushLite][candy-link].
+
+[candy-link]: #
 
 # Implementation #
 + DOM elements based game.
