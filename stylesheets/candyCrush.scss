@@ -86,13 +86,13 @@ body{
 }
 
 #service-area{
+  text-align: center;
   height: 100px;
+  width: 500px;
   position: absolute;
   background-color: white;
   top: 0px;
-  left: 0px;
-  width: 600px;
-  padding-left: 100px;
+  left: 100px;
   z-index: 9999999;
 }
 
