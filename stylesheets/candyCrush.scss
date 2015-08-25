@@ -1,5 +1,6 @@
 body{
   background-image: url(../assets/candies/CandyHearts.jpg);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #candy-crush-master{
@@ -58,12 +59,13 @@ body{
 
 #high-score-board{
   height: 800px;
+  width: 660px;
   position: absolute;
   background-color: AliceBlue;
   bottom: 0px;
   left: 0px;
-  width: 700px;
   z-index: 9999999;
+  padding: 20px;
 
   font-size: 36px;
 }

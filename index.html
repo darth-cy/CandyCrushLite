@@ -37,17 +37,10 @@
         <div id="current-score-board"></div>
 
         <div id="high-score-board">
-          <label for="score-input"><br><strong>Input your name to submit score:</strong><br></label>
-          <input type="text" name="user[name]" id="score-input"><br>
-
-          <button id="submit-score"><strong>Submit</strong></button>
-
-          <hr>
-
-          <br>
-          You are playing a standalone version. The leaderboard is not available.
-          <br>
-
+          Instructions:<br><br>
+          1. Drag mouse between candies to swap them.<br><br>
+          2. When aligning more than 3 candies or forming an L shape, a wrapped candy will appear.<br><br>
+          3. When wrapped candies are used in alignment, they form bombs that will blast the nearby 3x3 region.<br><br>
         </div>
       </div>
 
@@ -62,8 +55,6 @@
 
         var eventHandler = new CandyCrush.EventHandler();
         var newCandyCrush = new CandyCrush.Game(candyField, eventHandler);
-
-        // $("#submit-score").on("click", eventHandler.sendScore.bind(eventHandler));
       })
     </script>
 
