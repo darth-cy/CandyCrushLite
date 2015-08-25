@@ -1,3 +1,7 @@
+body{
+  background-image: url(../assets/candies/CandyHearts.jpg);
+}
+
 #candy-crush-master{
   position: absolute;
   margin: 0px;
@@ -11,6 +15,7 @@
 
 #game-domain{
   position: relative;
+  background-color: white;
   margin: 0px;
   height: 1000px;
   width: 700px;
@@ -19,7 +24,12 @@
   display: inline-block;
 }
 
+#game-box{
+  background-color: white;
+}
+
 #show-off-domain{
+  text-align: center;
   position: relative;
   margin: 0px;
   height: 1000px;
@@ -57,6 +67,25 @@
   left: 0px;
   width: 700px;
   z-index: 9999999;
+
+  font-size: 36px;
+}
+
+#high-score-board > label{
+  margin-top: 20px;
+}
+
+#high-score-board > input{
+  margin-top: 10px;
+  font-size: 36px;
+  width: 500px;
+  height: 50px;
+}
+
+#high-score-board > button{
+  margin-top: 10px;
+  width: 200px;
+  height: 40px;
 }
 
 #service-area{
@@ -92,6 +121,30 @@
   width: 500px;
 
   z-index: 200;
+}
+
+#instruction-field{
+  height: 1005px;
+  width: 1410px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: 9999999999999;
+}
+
+#instruction-modal{
+  width: 500px;
+  height: 300px;
+
+  position: absolute;
+  top: 200px;
+  left: 300px;
+
+  padding: 60px;
+  font-size: 24px;
+  font-weight: bolder;
+
+  background-color: white;
+  z-index: 10000000000000;
 }
 
 .candy-box{
